@@ -1,4 +1,5 @@
-for i in range(int(input())):
+t=int(input())
+while(t>0):
     n=int(input())
     a=list(map(int,input().split()))
     b=list(map(int,input().split()))
@@ -19,3 +20,4 @@ for i in range(int(input())):
             print("yes")
         else:
             print("no")
+    t-=1
