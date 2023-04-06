@@ -1,0 +1,22 @@
+t=int(input())
+while(t>0):
+    n,x=map(int,input().split())
+    li=input()
+    if(li[0]=="0"):
+        if(x==1):
+            li2=list(map(int,li))
+            li2[0]=1
+            my_string = ''.join(str(i) for i in li2)
+            print(my_string)
+        else:
+            li+="0"*(x-1)
+            li2=list(map(int,li))
+            li2[0]=1
+            my_string = ''.join(str(i) for i in li2)
+            print(my_string)
+            
+    else:
+        li+="0"*x
+        print(li)
+        
+    t-=1
