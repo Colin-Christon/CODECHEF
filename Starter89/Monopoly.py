@@ -1,0 +1,10 @@
+t=int(input())
+while(t>0):
+    li=list(map(int,input().split()))
+    li.sort()
+    total=sum(li[0:3])
+    if(total<li[3]):
+        print("YES")
+    else:
+        print("NO")
+    t-=1
